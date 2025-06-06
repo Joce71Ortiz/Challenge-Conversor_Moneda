@@ -7,7 +7,7 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 
 public class ConsultarMonedasDeCambio {
-    private static  final String API_KEY = "3712e8f20c8c2c9948d88984";
+    private static  final String API_KEY = ""; // Agregue su API entre las comillas
 
     public Moneda buscarMonedas(String monedaBase, String monedaTarget) {
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/" + monedaBase + "/" + monedaTarget);
